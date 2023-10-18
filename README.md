@@ -1,7 +1,7 @@
 # Version comparison
 
-The input data for the project is a list of binary packages of 2 branches. In my case, p10 and p9.
-This project creates three files.
+The input data for the project is a list of binary packages of 2 branches. For example, p10 and p9.
+Supported architecture branches: x86_64, i586, noarch, aarch64, armh, ppc64le.
 
 The received package lists are compared and a JSON file is output in which:
 
@@ -22,17 +22,13 @@ Build the project using Cmake
 ```sh
 Cmake /"the path to the CMakeLists.txt"
 make
+cd temp
 ```
 
-Run task_1_2_3
+Run main
 ```sh
-./task_1_2_3
+./main
 ```
+
 # Result
-As a result, 3 files are created with all the necessary information.
-
-difference1.json
-
-difference2.json
-
-difference3.json
+As a result, 3 folders are created with all the necessary information: Task_1, Task_2, Task_3.
